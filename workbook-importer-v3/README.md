@@ -1,0 +1,1 @@
+Supports worksheet auto-detection, duplicate detection, slug generation, CSV validation report, seed JSON, and --validate-only mode.
