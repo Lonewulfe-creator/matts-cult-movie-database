@@ -8,7 +8,7 @@ export default function Home() {
           </h1>
 
           <nav className="flex gap-6 text-zinc-300">
-            <a href="#">Films</a>
+            <a href="/films">Films</a>
             <a href="#">Top 100</a>
             <a href="#">Watchlist</a>
             <a href="#">Stats</a>
