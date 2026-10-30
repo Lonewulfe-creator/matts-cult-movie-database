@@ -1,0 +1,42 @@
+[
+  {
+    "rank": 1,
+    "title": "An American Werewolf in London",
+    "year": 1981,
+    "director": "John Landis",
+    "genre": "Horror",
+    "subGenre": "Werewolf Horror"
+  },
+  {
+    "rank": 2,
+    "title": "Suspiria",
+    "year": 1977,
+    "director": "Dario Argento",
+    "genre": "Horror",
+    "subGenre": "Supernatural Giallo"
+  },
+  {
+    "rank": 3,
+    "title": "The Changeling",
+    "year": 1980,
+    "director": "Peter Medak",
+    "genre": "Horror",
+    "subGenre": "Ghost Story"
+  },
+  {
+    "rank": 4,
+    "title": "Deep Red",
+    "year": 1975,
+    "director": "Dario Argento",
+    "genre": "Horror",
+    "subGenre": "Giallo"
+  },
+  {
+    "rank": 5,
+    "title": "Carnival of Souls",
+    "year": 1962,
+    "director": "Herk Harvey",
+    "genre": "Horror",
+    "subGenre": "Atmospheric Horror"
+  }
+]
