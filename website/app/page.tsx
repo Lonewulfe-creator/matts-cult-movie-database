@@ -85,6 +85,7 @@ export default function Home() {
             <h4 className="text-4xl font-bold text-red-500">
               250+
             </h4>
+
             <p className="text-zinc-400">
               Films
             </p>
@@ -94,6 +95,7 @@ export default function Home() {
             <h4 className="text-4xl font-bold text-red-500">
               100
             </h4>
+
             <p className="text-zinc-400">
               Top Ranked
             </p>
@@ -103,6 +105,7 @@ export default function Home() {
             <h4 className="text-4xl font-bold text-red-500">
               24
             </h4>
+
             <p className="text-zinc-400">
               Genres
             </p>
@@ -110,4 +113,15 @@ export default function Home() {
 
           <div className="rounded-xl bg-zinc-900 p-6">
             <h4 className="text-4xl font-bold text-red-500">
-              1980
+              1980s
+            </h4>
+
+            <p className="text-zinc-400">
+              Favourite Decade
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}
