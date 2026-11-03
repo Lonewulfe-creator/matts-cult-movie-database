@@ -19,7 +19,7 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="relative flex min-h-[700px] items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[850px] items-center justify-center overflow-hidden">
         <img
           src="/hero.jpg"
           alt="Hero Background"
@@ -29,7 +29,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-red-950/70"></div>
 
         <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-          <h2 className="text-7xl font-bold tracking-wider text-red-600 md:text-8xl">
+          <h2 className="text-7xl font-bold tracking-wider text-red-500 drop-shadow-[0_0_25px_rgba(220,38,38,0.7)] md:text-8xl">
             LONEWULFE'S
           </h2>
 
@@ -49,7 +49,7 @@ export default function Home() {
             <input
               type="text"
               placeholder="Search the vault..."
-              className="w-full rounded-xl border border-zinc-700 bg-black/70 p-5 text-center text-lg text-white backdrop-blur-sm"
+              className="w-full rounded-xl border border-zinc-700 bg-black/40 p-5 text-center text-lg text-white backdrop-blur-sm"
             />
           </div>
 
