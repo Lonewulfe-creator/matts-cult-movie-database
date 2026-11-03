@@ -19,25 +19,43 @@ export default function Home() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-7xl px-6 py-20 text-center">
-        <h2 className="text-7xl font-bold leading-tight">
-          Discover the Greatest
-          <br />
-          Cult Movies Ever Made
-        </h2>
+     <section
+  className="relative flex min-h-[700px] items-center justify-center overflow-hidden"
+  style={{
+    backgroundImage:
+      "url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba')",
+    backgroundSize: "cover",
+    backgroundPosition: "center",
+  }}
+>
+  <div className="absolute inset-0 bg-black/75"></div>
 
-        <p className="mt-6 text-xl text-zinc-400">
-          Horror • Sci-Fi • Giallo • Exploitation • Midnight Movies
-        </p>
+  <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
+    <h2 className="text-7xl font-bold tracking-wider text-red-600 md:text-8xl">
+      LONEWULFE'S
+    </h2>
 
-        <div className="mt-10">
-          <input
-            type="text"
-            placeholder="Search films..."
-            className="w-full max-w-xl rounded-xl border border-zinc-700 bg-zinc-900 p-4 text-white"
-          />
-        </div>
-      </section>
+    <h3 className="mt-2 text-4xl tracking-[0.3em] text-white md:text-5xl">
+      VAULT OF CULT CINEMA
+    </h3>
+
+    <p className="mt-8 text-lg uppercase tracking-[0.4em] text-zinc-300">
+      Obscure • Unsettling • Unforgettable
+    </p>
+
+    <p className="mt-6 text-xl text-zinc-400">
+      Horror • Sci-Fi • Giallo • Exploitation • Midnight Movies
+    </p>
+
+    <div className="mx-auto mt-12 max-w-3xl">
+      <input
+        type="text"
+        placeholder="Search the vault..."
+        className="w-full rounded-xl border border-zinc-700 bg-black/80 p-5 text-center text-lg text-white"
+      />
+    </div>
+  </div>
+</section>
 
       <section className="mx-auto max-w-7xl px-6 pb-12">
         <div className="rounded-2xl border border-red-900 bg-gradient-to-r from-red-950 to-black p-10">
