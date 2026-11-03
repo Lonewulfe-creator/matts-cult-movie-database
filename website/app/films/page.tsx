@@ -1,6 +1,8 @@
 import films from "../../data/films.json";
 import { getMoviePoster } from "../../lib/tmdb";
 
+export const dynamic = "force-dynamic";
+
 export default async function FilmsPage() {
   const posterUrl = await getMoviePoster("The Thing");
   
