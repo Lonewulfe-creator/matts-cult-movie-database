@@ -3,7 +3,7 @@ import films from "../../data/films.json";
 
 
 
-export default async function FilmsPage() {
+export default function FilmsPage() {
   
   
   return (
