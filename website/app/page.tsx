@@ -22,8 +22,7 @@ export default function Home() {
      <section
   className="relative flex min-h-[700px] items-center justify-center overflow-hidden"
   style={{
-    backgroundImage:
-      "url('https://images.unsplash.com/photo-1489599849927-2ee91cede3ba')",
+    backgroundImage: "url('/hero.jpg)",
     backgroundSize: "cover",
     backgroundPosition: "center",
   }}
