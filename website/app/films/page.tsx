@@ -1,7 +1,9 @@
 import films from "../../data/films.json";
 import { getMoviePoster } from "../../lib/tmdb";
 
-export default function FilmsPage() {
+export default async function FilmsPage() {
+  const posterUrl = await getMoviePoster("The Thing");
+  
   return (
     <main className="min-h-screen bg-black p-8 text-white">
       <h1 className="mb-8 text-5xl font-bold">
