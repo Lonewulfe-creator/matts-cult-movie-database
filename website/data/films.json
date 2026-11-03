@@ -1,12 +1,15 @@
 [
   {
-    "rank": 1,
-    "title": "An American Werewolf in London",
-    "year": 1981,
-    "director": "John Landis",
-    "genre": "Horror",
-    "subGenre": "Werewolf Horror",
-    "poster": ""
+     "rank": 1,
+  "title": "An American Werewolf in London",
+  "year": 1981,
+  "director": "John Landis",
+  "genre": "Horror",
+  "subGenre": "Werewolf Horror",
+  "poster": "",
+  "rating": "",
+  "runtime": "",
+  "country": ""
   },
   {
     "rank": 2,
