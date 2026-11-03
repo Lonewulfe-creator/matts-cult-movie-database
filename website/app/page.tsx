@@ -27,7 +27,7 @@ export default function Home() {
     backgroundPosition: "center",
   }}
 >
-  <div className="absolute inset-0 bg-black/75"></div>
+  <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-red-950/60"></div>
 
   <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
     <h2 className="text-7xl font-bold tracking-wider text-red-600 md:text-8xl">
