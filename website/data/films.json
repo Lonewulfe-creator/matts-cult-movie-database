@@ -5,7 +5,8 @@
     "year": 1981,
     "director": "John Landis",
     "genre": "Horror",
-    "subGenre": "Werewolf Horror"
+    "subGenre": "Werewolf Horror",
+    "poster": "https://image.tmdb.org/t/p/w500/hVEqUASJmCQaolkKFEySCHZ8uKG.jpg"
   },
   {
     "rank": 2,
@@ -13,7 +14,8 @@
     "year": 1977,
     "director": "Dario Argento",
     "genre": "Horror",
-    "subGenre": "Supernatural Giallo"
+    "subGenre": "Supernatural Giallo",
+    "poster": "https://image.tmdb.org/t/p/w500/bRpKFPb8CWKRQxVo9NzOuPPlO3Q.jpg"
   },
   {
     "rank": 3,
@@ -21,7 +23,8 @@
     "year": 1980,
     "director": "Peter Medak",
     "genre": "Horror",
-    "subGenre": "Ghost Story"
+    "subGenre": "Ghost Story",
+    "poster": "https://image.tmdb.org/t/p/w500/z4nTYj3JZ5jWAhDgrmEhW2GRAzb.jpg"
   },
   {
     "rank": 4,
@@ -29,7 +32,8 @@
     "year": 1975,
     "director": "Dario Argento",
     "genre": "Horror",
-    "subGenre": "Giallo"
+    "subGenre": "Giallo",
+    "poster": "https://image.tmdb.org/t/p/w500/wq7RxV5gMvgO0EKeWpNhegnpJBh.jpg"
   },
   {
     "rank": 5,
@@ -37,6 +41,7 @@
     "year": 1962,
     "director": "Herk Harvey",
     "genre": "Horror",
-    "subGenre": "Atmospheric Horror"
+    "subGenre": "Atmospheric Horror",
+    "poster": "https://image.tmdb.org/t/p/w500/AdbQsFB8pS090l0NO3uBtLZy2zw.jpg"
   }
 ]

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import films from "../../data/films.json";
 
 export default function FilmsPage() {
@@ -13,7 +14,19 @@ export default function FilmsPage() {
             key={film.rank}
             className="rounded-xl bg-zinc-900 p-4 transition duration-300 hover:scale-105 hover:bg-zinc-800"
           >
-            <div className="mb-4 h-80 rounded bg-zinc-800"></div>
+            <div className="mb-4 h-80 overflow-hidden rounded">
+              {film.poster ? (
+                <Image
+                  src={film.poster}
+                  alt={film.title}
+                  width={300}
+                  height={450}
+                  className="h-full w-full object-cover"
+                />
+              ) : (
+                <div className="h-full w-full bg-zinc-800"></div>
+              )}
+            </div>
 
             <h2 className="font-semibold text-red-500">
               #{film.rank} {film.title}

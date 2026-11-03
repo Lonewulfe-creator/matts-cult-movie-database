@@ -1,3 +1,4 @@
+import Image from "next/image";
 import films from "../data/films.json";
 
 export default function Home() {
@@ -6,7 +7,7 @@ export default function Home() {
       <header className="border-b border-zinc-800">
         <div className="mx-auto flex max-w-7xl items-center justify-between p-6">
           <h1 className="text-2xl font-bold text-red-600">
-            Matt&apos;s Cult Movie Database
+            Matt's Cult Movie Database
           </h1>
 
           <nav className="flex gap-6 font-semibold text-zinc-300">
@@ -41,11 +42,11 @@ export default function Home() {
       <section className="mx-auto max-w-7xl px-6 pb-12">
         <div className="rounded-2xl border border-red-900 bg-gradient-to-r from-red-950 to-black p-10">
           <h3 className="text-3xl font-bold">
-            #1 An American Werewolf in London
+            #{films[0].rank} {films[0].title}
           </h3>
 
           <p className="mt-4 text-zinc-300">
-            Matt&apos;s highest-ranked cult movie from the collection.
+            Matt's highest-ranked cult movie from the collection.
           </p>
         </div>
       </section>
@@ -61,7 +62,19 @@ export default function Home() {
               key={film.rank}
               className="rounded-xl bg-zinc-900 p-4 transition duration-300 hover:scale-105 hover:bg-zinc-800"
             >
-              <div className="mb-4 h-80 rounded bg-zinc-800"></div>
+              <div className="mb-4 h-80 overflow-hidden rounded">
+                {film.poster ? (
+                  <Image
+                    src={film.poster}
+                    alt={film.title}
+                    width={300}
+                    height={450}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div className="h-full w-full bg-zinc-800"></div>
+                )}
+              </div>
 
               <h4 className="font-semibold text-red-500">
                 #{film.rank} {film.title}
@@ -85,7 +98,6 @@ export default function Home() {
             <h4 className="text-4xl font-bold text-red-500">
               250+
             </h4>
-
             <p className="text-zinc-400">
               Films
             </p>
@@ -95,7 +107,6 @@ export default function Home() {
             <h4 className="text-4xl font-bold text-red-500">
               100
             </h4>
-
             <p className="text-zinc-400">
               Top Ranked
             </p>
@@ -105,7 +116,6 @@ export default function Home() {
             <h4 className="text-4xl font-bold text-red-500">
               24
             </h4>
-
             <p className="text-zinc-400">
               Genres
             </p>
@@ -115,7 +125,6 @@ export default function Home() {
             <h4 className="text-4xl font-bold text-red-500">
               1980s
             </h4>
-
             <p className="text-zinc-400">
               Favourite Decade
             </p>
