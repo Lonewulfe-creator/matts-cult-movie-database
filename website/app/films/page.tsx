@@ -1,7 +1,12 @@
 import Image from "next/image";
 import films from "../../data/films.json";
 
+
+
+
 export default function FilmsPage() {
+  
+  
   return (
     <main className="min-h-screen bg-black p-8 text-white">
       <h1 className="mb-8 text-5xl font-bold">
@@ -12,7 +17,8 @@ export default function FilmsPage() {
         {films.map((film) => (
           <div
             key={film.rank}
-            className="rounded-xl bg-zinc-900 p-4 transition duration-300 hover:scale-105 hover:bg-zinc-800"
+            
+           className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 shadow-lg transition duration-300 hover:scale-105 hover:border-red-500 hover:bg-zinc-800"
           >
             <div className="mb-4 h-80 overflow-hidden rounded">
               {film.poster ? (
