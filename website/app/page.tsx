@@ -19,42 +19,79 @@ export default function Home() {
         </div>
       </header>
 
-     <section
-  className="relative flex min-h-[700px] items-center justify-center overflow-hidden"
-  style={{
-    backgroundImage: "url('/hero.jpg)",
-    backgroundSize: "cover",
-    backgroundPosition: "center",
-  }}
->
-  <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/60 to-red-950/60"></div>
+      <section className="relative flex min-h-[700px] items-center justify-center overflow-hidden">
+        <img
+          src="/hero.jpg"
+          alt="Hero Background"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
 
-  <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
-    <h2 className="text-7xl font-bold tracking-wider text-red-600 md:text-8xl">
-      LONEWULFE'S
-    </h2>
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/50 to-red-950/70"></div>
 
-    <h3 className="mt-2 text-4xl tracking-[0.3em] text-white md:text-5xl">
-      VAULT OF CULT CINEMA
-    </h3>
+        <div className="relative z-10 mx-auto max-w-5xl px-6 text-center">
+          <h2 className="text-7xl font-bold tracking-wider text-red-600 md:text-8xl">
+            LONEWULFE'S
+          </h2>
 
-    <p className="mt-8 text-lg uppercase tracking-[0.4em] text-zinc-300">
-      Obscure • Unsettling • Unforgettable
-    </p>
+          <h3 className="mt-2 text-4xl tracking-[0.3em] text-white md:text-5xl">
+            VAULT OF CULT CINEMA
+          </h3>
 
-    <p className="mt-6 text-xl text-zinc-400">
-      Horror • Sci-Fi • Giallo • Exploitation • Midnight Movies
-    </p>
+          <p className="mt-8 text-lg uppercase tracking-[0.4em] text-zinc-300">
+            Obscure • Unsettling • Unforgettable
+          </p>
 
-    <div className="mx-auto mt-12 max-w-3xl">
-      <input
-        type="text"
-        placeholder="Search the vault..."
-        className="w-full rounded-xl border border-zinc-700 bg-black/80 p-5 text-center text-lg text-white"
-      />
-    </div>
-  </div>
-</section>
+          <p className="mt-6 text-xl text-zinc-300">
+            Horror • Sci-Fi • Giallo • Exploitation • Midnight Movies
+          </p>
+
+          <div className="mx-auto mt-12 max-w-3xl">
+            <input
+              type="text"
+              placeholder="Search the vault..."
+              className="w-full rounded-xl border border-zinc-700 bg-black/70 p-5 text-center text-lg text-white backdrop-blur-sm"
+            />
+          </div>
+
+          <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-4">
+            <div className="rounded-lg border border-zinc-800 bg-black/60 p-4">
+              <div className="text-3xl font-bold text-red-500">
+                {films.length}
+              </div>
+              <div className="text-sm uppercase tracking-wider text-zinc-400">
+                Films
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-zinc-800 bg-black/60 p-4">
+              <div className="text-3xl font-bold text-red-500">
+                24
+              </div>
+              <div className="text-sm uppercase tracking-wider text-zinc-400">
+                Genres
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-zinc-800 bg-black/60 p-4">
+              <div className="text-3xl font-bold text-red-500">
+                10
+              </div>
+              <div className="text-sm uppercase tracking-wider text-zinc-400">
+                Decades
+              </div>
+            </div>
+
+            <div className="rounded-lg border border-zinc-800 bg-black/60 p-4">
+              <div className="text-3xl font-bold text-red-500">
+                100
+              </div>
+              <div className="text-sm uppercase tracking-wider text-zinc-400">
+                Top Ranked
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="mx-auto max-w-7xl px-6 pb-12">
         <div className="rounded-2xl border border-red-900 bg-gradient-to-r from-red-950 to-black p-10">
@@ -63,7 +100,7 @@ export default function Home() {
           </h3>
 
           <p className="mt-4 text-zinc-300">
-            Matt's highest-ranked cult movie from the collection.
+            Lonewulfe's highest-ranked cult movie from the collection.
           </p>
         </div>
       </section>
