@@ -1,4 +1,5 @@
 import films from "../../data/films.json";
+import { getMoviePoster } from "../../lib/tmdb";
 
 export default function FilmsPage() {
   return (
