@@ -16,9 +16,20 @@ export default function FilmsPage() {
         {films.map((film) => (
           <div
             key={film.rank}
-            className="rounded-xl bg-zinc-900 p-4 transition duration-300 hover:scale-105 hover:bg-zinc-800"
+            
+           className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 shadow-lg transition duration-300 hover:scale-105 hover:border-red-500 hover:bg-zinc-800"
           >
-<div className="mb-4 h-80 rounded bg-zinc-800"></div>
+
+            <div className="mb-4 flex h-80 items-center justify-center rounded bg-gradient-to-br from-zinc-800 to-zinc-950 text-center text-zinc-500">
+  <div>
+    <div className="text-lg font-bold text-red-500">
+      {film.title}
+    </div>
+    <div className="mt-2 text-sm">
+      {film.year}
+    </div>
+  </div>
+</div>
 
             
 
