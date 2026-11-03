@@ -7,7 +7,7 @@ export default function Home() {
       <header className="border-b border-zinc-800">
         <div className="mx-auto flex max-w-7xl items-center justify-between p-6">
           <h1 className="text-2xl font-bold text-red-600">
-            Matt's Cult Movie Database
+            Lonewulfe's Cult Movie Database
           </h1>
 
           <nav className="flex gap-6 font-semibold text-zinc-300">
