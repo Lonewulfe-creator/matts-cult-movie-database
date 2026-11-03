@@ -1,10 +1,10 @@
 import films from "../../data/films.json";
-import { getMoviePoster } from "../../lib/tmdb";
 
-export const dynamic = "force-dynamic";
+
+
 
 export default async function FilmsPage() {
-  const posterUrl = await getMoviePoster("The Thing");
+  
   
   return (
     <main className="min-h-screen bg-black p-8 text-white">
@@ -18,15 +18,9 @@ export default async function FilmsPage() {
             key={film.rank}
             className="rounded-xl bg-zinc-900 p-4 transition duration-300 hover:scale-105 hover:bg-zinc-800"
           >
-            <div className="mb-4 h-80 rounded bg-zinc-800 overflow-hidden">
-  {posterUrl && (
-    <img
-      src={posterUrl}
-      alt="The Thing Poster"
-      className="h-full w-full object-cover"
-    />
-  )}
-</div>
+<div className="mb-4 h-80 rounded bg-zinc-800"></div>
+
+            
 
             <h2 className="font-semibold text-red-500">
               #{film.rank} {film.title}
