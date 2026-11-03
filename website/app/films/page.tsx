@@ -20,21 +20,26 @@ export default function FilmsPage() {
            className="rounded-xl border border-zinc-800 bg-zinc-900 p-4 shadow-lg transition duration-300 hover:scale-105 hover:border-red-500 hover:bg-zinc-800"
           >
 
-            <div className="mb-4 flex h-80 items-end rounded bg-gradient-to-t from-black via-zinc-900 to-zinc-700 p-6">
-              
-  <div className="w-full">
-
-    
-    <div className="text-2xl font-bold text-white">
-
-      
-      {film.title}
+         <div className="mb-4 h-80 overflow-hidden rounded">
+  {film.poster ? (
+    <img
+      src={film.poster}
+      alt={film.title}
+      className="h-full w-full object-cover"
+    />
+  ) : (
+    <div className="flex h-full items-end bg-gradient-to-t from-black via-zinc-900 to-zinc-700 p-6">
+      <div className="w-full">
+        <div className="text-2xl font-bold text-white">
+          {film.title}
+        </div>
+        <div className="mt-2 text-sm">
+          {film.year}
+        </div>
+      </div>
     </div>
-    <div className="mt-2 text-sm">
-      {film.year}
-    </div>
-  </div>
-</div>
+  )}
+</div>  
 
             
 
